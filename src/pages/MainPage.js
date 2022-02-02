@@ -13,26 +13,25 @@ const Container = styled.div`
 const MainPage = () => {
   const [dataLoad, setDataLoad] = useState([]);
   const [currentSelected, setCurrentSelected] = useState(0);
-  const showContect1 = () => {
-    if (currentSelected === 1) {
-      setCurrentSelected(0);
-    } else {
-      setCurrentSelected(1);
-    }
-  };
+
   useEffect(() => {
-    axios.get("//cdn.ggumim.co.kr/test/image_product_link.json").then((response) => {
-      setDataLoad(response.data).catch(() => {
-        console.log("로딩 실패");
-      });
-    });
+    const ggumigiApi = () => {
+      axios
+        .get("//cdn.ggumim.co.kr/test/image_product_link.json")
+        .then((response) => {
+          setDataLoad(response.data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    };
+    ggumigiApi();
   }, []);
 
   return (
     <Container>
-      <div>test</div>
-      <TopPage dataLoad={dataLoad} currentSelected={currentSelected} setCurrentSelected={setCurrentSelected}></TopPage>
-      <UnderPage dataLoad={dataLoad} currentSelected={currentSelected} setCurrentSelected={setCurrentSelected}></UnderPage>
+      {dataLoad.productList && <TopPage dataLoad={dataLoad} currentSelected={currentSelected} setCurrentSelected={setCurrentSelected} />}
+      {dataLoad.productList && <UnderPage dataLoad={dataLoad} currentSelected={currentSelected} setCurrentSelected={setCurrentSelected} />}
     </Container>
   );
 };

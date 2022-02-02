@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Arrow from "../img/goarrow.png";
-import TextArrow from "../img/textboxarrow.png";
 
 const TabBoxContainerDown = styled.div`
   position: absolute;
@@ -135,9 +134,37 @@ const TabBoxContainerText = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
+  padding-bottom: 2px;
+  text-align: left;
+`;
+const TabTitle = styled.div`
+  line-height: 1.3em;
 `;
 const TitlePrice = styled.div`
   display: flex;
+  align-items: center;
+  margin-top: 4px;
+`;
+const PriceDetail = styled.span`
+  display: flex;
+  align-items: center;
+  color: #181d1f;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+`;
+const PriceOutside = styled.span`
+  color: #898f94;
+  font-size: 11px;
+  font-weight: bold;
+  margin-right: 4px;
+`;
+const PriceDiscounted = styled.span`
+  color: #ff585d;
+  margin-right: 4px;
+  line-height: 1.2em;
+  font-size: 16px;
+  font-weight: bold;
 `;
 const GoArrow = styled.div`
   display: flex;
@@ -146,7 +173,7 @@ const GoArrow = styled.div`
   margin-right: 2px;
 `;
 
-const TabPage = ({ dataLoad, currentSelected, setCurrentSelected }) => {
+const ToolTipPage = ({ dataLoad, currentSelected }) => {
   if (currentSelected === 1) {
     return (
       <TabBoxContainerUpRight>
@@ -155,18 +182,18 @@ const TabPage = ({ dataLoad, currentSelected, setCurrentSelected }) => {
         </div>
         {dataLoad.productList[0].outside === true ? (
           <TabBoxContainerText>
-            <div>{dataLoad.productList[0].productName}</div>
+            <TabTitle>{dataLoad.productList[0].productName}</TabTitle>
             <TitlePrice>
-              <p>예상가</p>
-              <p>{dataLoad.productList[0].priceDiscount}</p>
+              <PriceOutside>예상가</PriceOutside>
+              <PriceDetail>{dataLoad.productList[0].priceDiscount}</PriceDetail>
             </TitlePrice>
           </TabBoxContainerText>
         ) : (
           <TabBoxContainerText>
-            <div>{dataLoad.productList[0].productName}</div>
+            <TabTitle>{dataLoad.productList[0].productName}</TabTitle>
             <TitlePrice>
-              <p>{dataLoad.productList[0].discountRate}%</p>
-              <p>{dataLoad.productList[0].priceDiscount}</p>
+              <PriceDiscounted>{dataLoad.productList[0].discountRate}%</PriceDiscounted>
+              <PriceDetail>{dataLoad.productList[0].priceDiscount}</PriceDetail>
             </TitlePrice>
           </TabBoxContainerText>
         )}
@@ -183,18 +210,18 @@ const TabPage = ({ dataLoad, currentSelected, setCurrentSelected }) => {
         </div>
         {dataLoad.productList[1].outside === true ? (
           <TabBoxContainerText>
-            <div>{dataLoad.productList[1].productName}</div>
+            <TabTitle>{dataLoad.productList[1].productName}</TabTitle>
             <TitlePrice>
-              <p>예상가</p>
-              <p>{dataLoad.productList[1].priceDiscount}</p>
+              <PriceOutside>예상가</PriceOutside>
+              <PriceDetail>{dataLoad.productList[1].priceDiscount}</PriceDetail>
             </TitlePrice>
           </TabBoxContainerText>
         ) : (
           <TabBoxContainerText>
-            <div>{dataLoad.productList[1].productName}</div>
+            <TabTitle>{dataLoad.productList[1].productName}</TabTitle>
             <TitlePrice>
-              <p>{dataLoad.productList[1].discountRate}%</p>
-              <p>{dataLoad.productList[1].priceDiscount}</p>
+              <PriceDiscounted>{dataLoad.productList[1].discountRate}%</PriceDiscounted>
+              <PriceDetail>{dataLoad.productList[1].priceDiscount}</PriceDetail>
             </TitlePrice>
           </TabBoxContainerText>
         )}
@@ -211,18 +238,18 @@ const TabPage = ({ dataLoad, currentSelected, setCurrentSelected }) => {
         </div>
         {dataLoad.productList[2].outside === true ? (
           <TabBoxContainerText>
-            <div>{dataLoad.productList[2].productName}</div>
+            <TabTitle>{dataLoad.productList[2].productName}</TabTitle>
             <TitlePrice>
-              <p>예상가</p>
-              <p>{dataLoad.productList[2].priceDiscount}</p>
+              <PriceOutside>예상가</PriceOutside>
+              <PriceDetail>{dataLoad.productList[2].priceDiscount}</PriceDetail>
             </TitlePrice>
           </TabBoxContainerText>
         ) : (
           <TabBoxContainerText>
-            <div>{dataLoad.productList[2].productName}</div>
+            <TabTitle>{dataLoad.productList[2].productName}</TabTitle>
             <TitlePrice>
-              <p>{dataLoad.productList[2].discountRate}%</p>
-              <p>{dataLoad.productList[2].priceDiscount}</p>
+              <PriceDiscounted>{dataLoad.productList[2].discountRate}%</PriceDiscounted>
+              <PriceDetail>{dataLoad.productList[2].priceDiscount}</PriceDetail>
             </TitlePrice>
           </TabBoxContainerText>
         )}
@@ -239,18 +266,18 @@ const TabPage = ({ dataLoad, currentSelected, setCurrentSelected }) => {
         </div>
         {dataLoad.productList[3].outside === true ? (
           <TabBoxContainerText>
-            <div>{dataLoad.productList[3].productName}</div>
+            <TabTitle>{dataLoad.productList[3].productName}</TabTitle>
             <TitlePrice>
-              <p>예상가</p>
-              <p>{dataLoad.productList[3].priceDiscount}</p>
+              <PriceOutside>예상가</PriceOutside>
+              <PriceDetail>{dataLoad.productList[3].priceDiscount}</PriceDetail>
             </TitlePrice>
           </TabBoxContainerText>
         ) : (
           <TabBoxContainerText>
-            <div>{dataLoad.productList[3].productName}</div>
+            <TabTitle>{dataLoad.productList[3].productName}</TabTitle>
             <TitlePrice>
-              <p>{dataLoad.productList[3].discountRate}%</p>
-              <p>{dataLoad.productList[3].priceDiscount}</p>
+              <PriceDiscounted>{dataLoad.productList[3].discountRate}%</PriceDiscounted>
+              <PriceDetail>{dataLoad.productList[3].priceDiscount}</PriceDetail>
             </TitlePrice>
           </TabBoxContainerText>
         )}
@@ -267,18 +294,18 @@ const TabPage = ({ dataLoad, currentSelected, setCurrentSelected }) => {
         </div>
         {dataLoad.productList[4].outside === true ? (
           <TabBoxContainerText>
-            <div>{dataLoad.productList[4].productName}</div>
+            <TabTitle>{dataLoad.productList[4].productName}</TabTitle>
             <TitlePrice>
-              <p>예상가</p>
-              <p>{dataLoad.productList[4].priceDiscount}</p>
+              <PriceOutside>예상가</PriceOutside>
+              <PriceDetail>{dataLoad.productList[4].priceDiscount}</PriceDetail>
             </TitlePrice>
           </TabBoxContainerText>
         ) : (
           <TabBoxContainerText>
-            <div>{dataLoad.productList[4].productName}</div>
+            <TabTitle>{dataLoad.productList[4].productName}</TabTitle>
             <TitlePrice>
-              <p>{dataLoad.productList[4].discountRate}%</p>
-              <p>{dataLoad.productList[4].priceDiscount}</p>
+              <PriceDiscounted>{dataLoad.productList[4].discountRate}%</PriceDiscounted>
+              <PriceDetail>{dataLoad.productList[4].priceDiscount}</PriceDetail>
             </TitlePrice>
           </TabBoxContainerText>
         )}
@@ -295,18 +322,18 @@ const TabPage = ({ dataLoad, currentSelected, setCurrentSelected }) => {
         </div>
         {dataLoad.productList[5].outside === true ? (
           <TabBoxContainerText>
-            <div>{dataLoad.productList[5].productName}</div>
+            <TabTitle>{dataLoad.productList[5].productName}</TabTitle>
             <TitlePrice>
-              <p>예상가</p>
-              <p>{dataLoad.productList[5].priceDiscount}</p>
+              <PriceOutside>예상가</PriceOutside>
+              <PriceDetail>{dataLoad.productList[5].priceDiscount}</PriceDetail>
             </TitlePrice>
           </TabBoxContainerText>
         ) : (
           <TabBoxContainerText>
-            <div>{dataLoad.productList[5].productName}</div>
+            <TabTitle>{dataLoad.productList[5].productName}</TabTitle>
             <TitlePrice>
-              <p>{dataLoad.productList[5].discountRate}%</p>
-              <p>{dataLoad.productList[5].priceDiscount}</p>
+              <PriceDiscounted>{dataLoad.productList[5].discountRate}%</PriceDiscounted>
+              <PriceDetail>{dataLoad.productList[5].priceDiscount}</PriceDetail>
             </TitlePrice>
           </TabBoxContainerText>
         )}
@@ -323,18 +350,18 @@ const TabPage = ({ dataLoad, currentSelected, setCurrentSelected }) => {
         </div>
         {dataLoad.productList[6].outside === true ? (
           <TabBoxContainerText>
-            <div>{dataLoad.productList[6].productName}</div>
+            <TabTitle>{dataLoad.productList[6].productName}</TabTitle>
             <TitlePrice>
-              <p>예상가</p>
-              <p>{dataLoad.productList[6].priceDiscount}</p>
+              <PriceOutside>예상가</PriceOutside>
+              <PriceDetail>{dataLoad.productList[6].priceDiscount}</PriceDetail>
             </TitlePrice>
           </TabBoxContainerText>
         ) : (
           <TabBoxContainerText>
-            <div>{dataLoad.productList[6].productName}</div>
+            <TabTitle>{dataLoad.productList[6].productName}</TabTitle>
             <TitlePrice>
-              <p>{dataLoad.productList[6].discountRate}%</p>
-              <p>{dataLoad.productList[6].priceDiscount}</p>
+              <PriceDiscounted>{dataLoad.productList[6].discountRate}%</PriceDiscounted>
+              <PriceDetail>{dataLoad.productList[6].priceDiscount}</PriceDetail>
             </TitlePrice>
           </TabBoxContainerText>
         )}
@@ -347,4 +374,4 @@ const TabPage = ({ dataLoad, currentSelected, setCurrentSelected }) => {
     return null;
   }
 };
-export default TabPage;
+export default ToolTipPage;
