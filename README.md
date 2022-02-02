@@ -2,28 +2,45 @@
 
 # 🚀 "집꾸미기" 개인과제
 
-소개 적으세요
-
-1. 간단한 소개 몇가지
 - 배포 사이트 :https://pomeranian91.github.io/homeggumigi
 - 영상 : gif 파일 첨부
-
-## 👫 팀원
-
 - Front-end: 조용우
 
-## 개발 기간
+## 📆 개발 기간
 
 - 기간: 2022년 02월 01일 ~ 2021년 02월 03일(3일간)
 
 ## 적용 기술
 
-- Front-end:
+- Front-end : React(Funiction-Component)_reactr-router-dom(V6), styled-components, JavaScript(ES6)
 
-## 설치 및 시작하는 법
+## 🕹 설치 및 시작하는 법
 
-## 구현 기능 및 개인 역할
+1. git clone
+2. npm install
+3. npm run start
 
+## 프로젝트 구조
+  
+   - __public__
+     - index.html
+   - __src__
+     - __img__
+       - goarrow.png
+       - tabicon.png
+       - tabiconclose.png
+       - textboxarrow.png
+     - __pages__
+       - MainPage.js
+       - ToolTipPage.js
+       - TopPage.js
+       - UnderPage.js
+     - __styles__
+       - GlobalStyles.js
+     - index.js
+     - package\-lock.json
+     - package.json
+## 구현 기능
 
 ## 소감 및 후기
 
