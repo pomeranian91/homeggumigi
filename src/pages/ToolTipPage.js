@@ -15,7 +15,7 @@ const TabBoxContainerDown = styled.div`
   background-color: rgba(255, 255, 255, 0.95);
   border-radius: 7px;
   box-shadow: 3px 3px 8px 0 rgb(0 0 0 / 20%);
-  font-size: 14px;
+  font-size: 13px;
   color: #4a4a4a;
   z-index: 5;
   & :before {
@@ -44,7 +44,7 @@ const TabBoxContainerUpRight = styled.div`
   background-color: rgba(255, 255, 255, 0.95);
   border-radius: 7px;
   box-shadow: 3px 3px 8px 0 rgb(0 0 0 / 20%);
-  font-size: 14px;
+  font-size: 13px;
   color: #4a4a4a;
   z-index: 5;
   & :before {
@@ -75,7 +75,7 @@ const TabBoxContainerUpLeft = styled.div`
   background-color: rgba(255, 255, 255, 0.95);
   border-radius: 7px;
   box-shadow: 3px 3px 8px 0 rgb(0 0 0 / 20%);
-  font-size: 14px;
+  font-size: 13px;
   color: #4a4a4a;
   z-index: 5;
   & :before {
@@ -108,7 +108,7 @@ const TabBoxContainerDownLeft = styled.div`
   border-radius: 7px;
   z-index: 5;
   box-shadow: 3px 3px 8px 0 rgb(0 0 0 / 20%);
-  font-size: 14px;
+  font-size: 13px;
   color: #4a4a4a;
   & :before {
     content: "";
