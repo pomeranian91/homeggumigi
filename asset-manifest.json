@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/homeggumigi/static/js/main.f291e5ee.js",
+    "main.js": "/homeggumigi/static/js/main.a7693ea5.js",
     "index.html": "/homeggumigi/index.html",
-    "main.f291e5ee.js.map": "/homeggumigi/static/js/main.f291e5ee.js.map"
+    "main.a7693ea5.js.map": "/homeggumigi/static/js/main.a7693ea5.js.map"
   },
   "entrypoints": [
-    "static/js/main.f291e5ee.js"
+    "static/js/main.a7693ea5.js"
   ]
 }
