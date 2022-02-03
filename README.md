@@ -1,4 +1,6 @@
-﻿# 🚀 "집꾸미기" 개인과제
+
+
+# 🚀 "집꾸미기" 개인과제
 
 - 배포 사이트 :https://pomeranian91.github.io/homeggumigi
 - Front-end: 조용우
@@ -9,7 +11,7 @@
 
 ## 🛠 적용 기술
 
-- Front-end : React(Funiction-Component)\_reactr-router-dom(V6), styled-components, JavaScript(ES6)
+- Front-end : React(Funiction-Component)_reactr-router-dom(V6), styled-components, JavaScript(ES6)
 
 ## 🕹 설치 및 시작하는 법
 
@@ -18,25 +20,22 @@
 3. npm run start
 
 ## 📃 프로젝트 구조
-
-📦src
-┣ 📂img
-┃ ┣ 📜goarrow.png
-┃ ┣ 📜tabicon.png
-┃ ┣ 📜tabiconclose.png
-┃ ┗ 📜textboxarrow.png
-┣ 📂pages
-┃ ┣ 📜MainPage.js
-┃ ┣ 📜ToolTipPage.js
-┃ ┣ 📜TopPage.js
-┃ ┗ 📜UnderPage.js
-┣ 📂styles
-┃ ┗ 📜GlobalStyles.js
-┗ 📜index.js
-
+- #### 📦src
+- #### ┣ 📂img
+- ┃ ┣ 📜goarrow.png
+- ┃ ┣ 📜tabicon.png
+- ┃ ┣ 📜tabiconclose.png
+- ┃ ┗ 📜textboxarrow.png
+- #### ┣ 📂pages
+- ┃ ┣ 📜MainPage.js
+- ┃ ┣ 📜ToolTipPage.js
+- ┃ ┣ 📜TopPage.js
+- ┃ ┗ 📜UnderPage.js
+- #### ┣ 📂styles
+- ┃ ┗ 📜GlobalStyles.js
+- ┗ 📜index.js
+ 
 ##✔ 구현 기능
-
-
 - 사진과 가구에 대한 정보를 API를 통해서 호출하여 사용
   - axios를 사용하여 받아온 값을 state에 저장하여 사용
 - 기능설명
@@ -58,6 +57,7 @@
       - 상품이미지 (product 정보 imageUrl)
       - 상품명 (product 정보 name)
       - 예상 가격 (product 정보 priceDiscount)
-
+ 
 ##❗ 소감 및 후기
-이번 과제를 통해서 기본기를 좀 더 탄탄히 할 수 있어 정말 좋은 과제였습니다. tool tip박스의 상하좌우 위치를 각각 다르게 해야하는 부분에서 설계를 잘 하지 못해 로직을 제대로 설계하지 못 한 부분은 발전이 필요하다 생각합니다. 이번 과제를 계기로 좀 더 발전할 수 있는 프론트엔드 개발자가 되기 위해 노력하겠습니다.
+  이번 과제를 통해서 기본기를 좀 더 탄탄히 할 수 있어 정말 좋은 과제였습니다. tool tip박스의 상하좌우 위치를 각각 다르게 해야하는 부분에서 설계를 잘 하지 못해 로직을 제대로 설계하지 못 한 부분은 발전이 필요하다 생각합니다. 이번 과제를 계기로 좀 더 발전할 수 있는 프론트엔드 개발자가 되기 위해 노력하겠습니다.
+
